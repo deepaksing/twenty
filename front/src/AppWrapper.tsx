@@ -1,4 +1,5 @@
 import { StrictMode } from 'react';
+import { HotkeysProvider } from 'react-hotkeys-hook';
 import { BrowserRouter } from 'react-router-dom';
 import { ApolloProvider } from '@apollo/client';
 import { useRecoilState } from 'recoil';
@@ -17,9 +18,11 @@ export function AppWrapper() {
       <BrowserRouter>
         <AuthProvider>
           <AppThemeProvider>
-            <StrictMode>
-              <App />
-            </StrictMode>
+            <HotkeysProvider initiallyActiveScopes={['none']}>
+              <StrictMode>
+                <App />
+              </StrictMode>
+            </HotkeysProvider>
           </AppThemeProvider>
         </AuthProvider>
       </BrowserRouter>
