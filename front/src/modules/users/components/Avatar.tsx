@@ -22,6 +22,7 @@ export const StyledAvatar = styled.div<Omit<OwnProps, 'placeholder'>>`
   border-radius: ${(props) => (props.type === 'rounded' ? '50%' : '2px')};
   color: ${(props) => props.theme.text80};
   display: flex;
+  flex-shrink: 0;
 
   font-size: ${(props) => props.theme.fontSizeSmall};
   font-weight: ${(props) => props.theme.fontWeightMedium};
