@@ -1,4 +1,5 @@
 export const commonText = {
+  fontSizeExtraExtraSmall: '0.625rem',
   fontSizeExtraSmall: '0.85rem',
   fontSizeSmall: '0.92rem',
   fontSizeMedium: '1rem',

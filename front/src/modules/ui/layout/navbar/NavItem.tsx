@@ -69,7 +69,9 @@ const StyledSoonPill = styled.div`
   align-items: center;
   border-radius: 50px;
   background-color: ${(props) => props.theme.lightBackgroundTransparent};
-  font-size: ${(props) => props.theme.fontSizeExtraSmall};
+  font-size: ${(props) => props.theme.fontSizeExtraExtraSmall};
+  line-height: 7px;
+  color: ${(props) => props.theme.text30};
   padding: ${(props) => props.theme.spacing(1)}
     ${(props) => props.theme.spacing(2)} ${(props) => props.theme.spacing(1)}
     ${(props) => props.theme.spacing(2)};
